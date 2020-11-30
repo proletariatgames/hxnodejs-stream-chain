@@ -1,4 +1,4 @@
-package externs.npm.stream_chain;
+package js.npm.stream_chain;
 
 import haxe.extern.EitherType;
 import js.node.Stream.IStream;
