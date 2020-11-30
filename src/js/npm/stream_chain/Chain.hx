@@ -8,10 +8,10 @@ import js.node.stream.Duplex;
 import js.node.stream.Transform;
 
 typedef TransformFunction = (chunk: Any, ?encoding: String) -> Any;
-typedef StreamItem = EitherType<Stream, TransformFunction>;
+typedef StreamItem = EitherType<IStream, TransformFunction>;
 
 typedef ChainNewOptions = {
-  > DuplexOptions,
+  > DuplexNewOptions,
   var ?skipEvents: Bool;
 }
 
@@ -66,5 +66,5 @@ extern class Chain extends Duplex<Chain> {
   Node streams assign a special meaning to undefined and null, so these values cannot possibly go the streaming infrastructure and cannot be used unwrapped.
   Yet they are perfectly legal inside comp() pipes.
   **/
-	static function sanitize(value:Any, stream:Stream):Void;
+	static function sanitize(value:Any, stream:IStream):Void;
 }
