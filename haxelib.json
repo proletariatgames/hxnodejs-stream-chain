@@ -1,0 +1,14 @@
+{
+  "name": "hxnodejs-stream-chain",
+  "url": "https://github.com/proletariatgames/hxnodejs-stream-chain",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["nodejs", "stream", "json", "stream-chain"],
+  "description": "Externs for the stream-chain NPM module",
+  "releasenote": "Initial release",
+  "version": "2.2.3",
+  "contributors": ["Proletariat", "ProletariatDev1"],
+  "dependencies": {
+    "hxnodejs": ""
+  }
+}
